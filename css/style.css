@@ -1,0 +1,68 @@
+body {
+	background-color: #ddd;
+}
+
+#main_container {
+	padding: 30px;
+}
+
+.justify-content-center {
+	justify-content: center !important;
+}
+
+.card-header {
+	padding: 0.75rem 1.25rem;
+}
+
+.mt-1 {
+	margin-top: .25rem !important;
+}
+
+.float-right {
+	float: right !important;
+}
+
+.card-title {
+	margin-bottom: .75rem;
+}
+
+.mt-2 {
+	margin-top: .5rem !important;
+}
+
+.card-body {
+	padding: 1.25rem;
+}
+div {
+	display: block;
+}
+
+form {
+	display: block;
+	margin-top: 0em;
+}
+
+.form-row> .col {
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 1rem;	
+}
+.form-group {
+	margin-bottom: 1rem;
+}
+
+label {
+	display: block;
+	margin-bottom: .5rem;
+	margin-top:
+}
+
+input {
+	border-radius: 0.25rem;
+    border: 1px solid #bab;
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
