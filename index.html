@@ -10,8 +10,6 @@
 
 	<title>Registration Page</title>
 
-	<script src="register.js"></script>
-
 </head>
 <body>
 	<div class="container" id="main_container">
@@ -24,63 +22,69 @@
 						<h4 class="card-title mt-2">Registration</h4>
 					</header>
 					<article class="card-body">
-						<form novalidate method="get" id="signup">
+						<form id="signup">
 							<div class="row form-group">
 								<div class="col">
-									<label required>First Name</label>
-									<input type="text" class="form-control" name="first_name">
+									<label  for="first_name">First Name</label>
+									<input type="text" class="form-control" id="first_name" name="first_name">
+									<span class="error">This field is required</span>
 								</div>							
 								<div class="col">
-									<label>Last Name</label>
-									<input type="text" class="form-control" name="last_name">
+									<label for="last_name">Last Name</label>
+									<input type="text" class="form-control" id="last_name" name="last_name">
+									<span class="error">This field is required</span>
 								</div>								
 							</div>
 							<div class="form-group">
-								<label>Email Address</label>
-								<input type="email" class="form-control" name="email" placeholder="email">
+								<label for="email">Email Address</label>
+								<input type="email" class="form-control" id="email" placeholder="email" name="email">
+								<span class="error">A valid email address is required</span>
 							</div>
 							<div class="form-group">
 								<label class="form-check-inline">
-									<input class="form-check-input" type="radio" name="male">
+									<input class="form-check-input" type="radio" id="male">
 									<span class="form-check-label"> Male </span>
 								</label>
 								<label class="form-check-inline">
-									<input class="form-check-input" type="radio" name="female">
+									<input class="form-check-input" type="radio" id="female">
 									<span class="form-check-label"> Female </span>
 								</label>
 							</div>
 							<div class="form-group">
-								<label>Address</label>
-								<input type="text" class="form-control" name="addr">
+								<label for="addr">Address</label>
+								<input type="text" class="form-control" id="addr" name="addr">
+								<span class="error">This field is required</span>
 							</div>
 							<div class="row form-group">
 								<div class="col-md-8">
-									<label>City</label>
-									<input type="text" class="form-control" name="city">
+									<label for="city">City</label>
+									<input type="text" class="form-control" id="city" name="city">
+									<span class="error">This field is required</span>
 								</div>
-								<div class="col-md-4">
-									<label>State</label>
-									<div class="dropdown">
-										<select id="inputState" class="form-control">
-											<option>Choose</option>
-											<option>Odisha</option>
-											<option>Chattisgarh</option>
-											<option>West Bengal</option>
-											<option>Maharashtra</option>
-										</select>										
+								<div class="col-md-4" >
+									<label for="state">State</label>
+									<div class="dropdown" id="drop_state" name="drop_state">
+										<select id="state" class="form-control" name="state">
+											<option value="">Choose..</option>
+											<option value="1">Odisha</option>
+											<option value="2">Chattisgarh</option>
+											<option value="3">West Bengal</option>
+											<option value="4">Maharashtra</option>
+										</select>
+										<span class="error">This field is required</span>			
 									</div>
+									
 								</div>
 							</div>
 							<div class="form-group">
-								<label>Password</label>
-								<input class="form-control" type="password" name="password" placeholder="password">
+								<label for="password">Password</label>
+								<input class="form-control" type="password" id="password" placeholder="Password" name="password">
+								<span class="error">This field is required</span>
 							</div>
+
+							
 							<div class="form-group">
-								<label>Confirm Password</label>
-								<input class="form-control" type="password" name="password" placeholder="Confirm Password">
-							</div>
-							<div class="form-group">
-								<button type="submit" class="btn btn-primary btn-block" onclick="clickAlert()" id="submit">Register</button>
+								<button type="submit" class="btn btn-primary btn-block" id="submit">Register</button>
 								
 							</div>
 						</form>
@@ -96,6 +100,6 @@
  
 	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
  
-	<script src="register.js"></script>
+	<script src="js/register.min.js"></script>
 </body>
 </html>
