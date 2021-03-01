@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Bootstrap css-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -12,7 +13,7 @@
 
 </head>
 <body>
-	<div class="container" id="main_container">
+	<div class="container-fluid" id="main_container">
 		<br>
 		<div class="row justify-content-center">
 			<div class="col-md-6">
@@ -22,7 +23,7 @@
 						<h4 class="card-title mt-2">Registration</h4>
 					</header>
 					<article class="card-body">
-						<form id="signup">
+						<form id="signup" class="form">
 							<div class="row form-group">
 								<div class="col">
 									<label  for="first_name">First Name</label>
@@ -37,7 +38,7 @@
 							</div>
 							<div class="form-group">
 								<label for="email">Email Address</label>
-								<input type="email" class="form-control" id="email" placeholder="email" name="email">
+								<input type="email" class="form-control" id="email" placeholder="abc@xyz" name="email">
 								<span class="error">A valid email address is required</span>
 							</div>
 							<div class="form-group">
@@ -65,7 +66,7 @@
 									<label for="state">State</label>
 									<div class="dropdown" id="drop_state" name="drop_state">
 										<select id="state" class="form-control" name="state">
-											<option value="">Choose..</option>
+											<option value="">Choose</option>
 											<option value="1">Odisha</option>
 											<option value="2">Chattisgarh</option>
 											<option value="3">West Bengal</option>
@@ -96,18 +97,36 @@
 						<div class="panel">
 							<ul>
 								<li>
-									Firstname and Lastname should be between 3 and 8 characters 
+									Firstname and Lastname should be between 3 and 8 characters and should not contain any numbers.
 								</li>
 								<li>
-									Address should be more than 10 characters
+									Address should be more than 10 characters.
 								</li>
 								<li>
-									City should not be less than 3 characters
+									City should not be less than 3 characters.
 								</li>
 								<li>
-									Password should contain alphanumeric letters and one uppercase letter
+									Password should contain alphanumeric letters and one uppercase letter and should be between 6 and 18 characters in length.
 								</li>
 							</ul>
+						</div>
+						<button class="accordion">Accordion 2</button>
+						<div class="panel">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<button class="accordion">Accordion 3</button>
+						<div class="panel">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</article>
 				</div>
